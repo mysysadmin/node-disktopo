@@ -1,0 +1,34 @@
+
+node-disktopo
+
+node-disktopo is a Node.js addon that interfaces to libtopo allowing node programs to
+to receive disk topologies.
+
+Status
+
+If you have JBODs with disks it should return your topology.
+
+Platform
+
+This should work on Solaris and derivatives
+
+Installation/Configuration
+
+% node-waf configure
+% node-waf build
+
+API
+
+There is one function implemented
+list()
+
+EXAMPLES
+
+Try it with ./topo.js
+
+BUILD
+
+I was not able to use it without relocation errors with a default
+node-waf build
+
+g++ -I/usr/local/include/node -o disktopo.node ../../disktopo.cc -fPIC -DPIC -shared -L/usr/lib/fm -R/usr/lib/fm -ltopo -L/usr/local/lib

@@ -1,0 +1,12 @@
+{
+	"name": "disktopo",
+	"version": "0.1",
+	"description": "Provides JBODs disk topology on Solaris ",
+	"homepage": "https://github.com/mysysadmin/node-disktopo",
+	"author": "Peer Dampmann",
+	"engines": { "node": ">=0.6" },
+	"main": "./build/Release/disktopo",
+	"scripts": {
+		"install": "node-waf configure build"
+	}
+}
